@@ -1,37 +1,24 @@
-## Wellcome Map Working Prototype
+## Project Pages Working Prototype
 
-### Project Summary
+### Intro
 
-The Wellcome Map is a new way of accessing and navigating institutional knowledge and expertise in Wellcome. To make the diversity of expertise, experience, and interests at Wellcome available to everyone on Trustnet.
+At the Wellcome Trust, I worked within a team who proposed an idea to improve
+infrastructure. Our aim was to support staff across the organisation to work more collaboratively and 
+efficiently. This has resulted in me becoming the co - owner of a medium sized feature, 
+‘Project Group Pages’  template for the organisation’s intranet, Trustnet.
 
-The team is comprised of apprentices and graduates who proposed this idea as part of the Truell Challenge. The Truell Challenge is an opportunity for graduates and apprentices to work together to come up with ways to improve Wellcome. It's also a way of paying homage to the trust's Emeritus Partner, Danny Truell, who set-up of the early careers programmes and supports early career development.
- 
- 
- The Wellcome is a suite of upgraded features for TrustNet which included:
+The Trustnet team devised a way to implement it while still accommodating our original aims. 
+The final result is a new ‘Project Group Pages’ template. 
 
-- new personal profiles
+We are involved in UX discovery and I have been invited to work alongside the Trustnet developers once 
+development begins. However, I’ve started developing a working prototype of this feature, 
+an API in Python, for my portfolio. I’m using Venv virtual environment as a lightweight alternative to 
+Pipenv and I’ll be using Flask to build the server. This is a WIP project and is being supervised by my mentor, James, 
+and I expect to have an MVP by late-August. 
 
-- new departmental pages
+This is the repo of my version of the prototype.
 
-- a project tracker
 
-- a new projects landing page and improved tagging functionality
 
-Aims
 
-- to help us work smarter be more efficient
-
-- to transform skills sharing and collaboration at Wellcome
-
-- to improve the functionality of tags to allow users to search easily for skills
-
-- to make information about institutional knowledge easy to find and digitally accessible
-
-- to improve individual work streams and support large projects and staff networks.
-
-- to prevent the duplication of work (to provide a clear, streamlined process for bringing together colleagues who can offer relevant support and insight into shared work)
-
-- to prevent siloed working / thinking
-
-### Implementation 
 
