@@ -19,6 +19,21 @@ Pipenv and I’ll be using Flask to build the server. This project is being supe
 I expect to have an MVP by late-August. 
 
 
+#### Checklist
+
+- [ ] Decide on routes / models needed to expose via API 
+- [ ] Create directory and repo
+- [ ] Check version of python, run `python3 -V` and `python -V`
+- [ ] check installed packages, run `pip3 list`
+- [ ] create virtual environment, `python3 -m venv projectName_env`, `cd` to virtual directory then run`source venv/bin/activate` to activate environment. run `pip list`
+- [ ] create test file
+- [ ] write tests using pyTest
+- [ ] Install Flask `pip install Flask`
+- [ ] Import Flask class
+- [ ] Create app instance, run `python app.py`
+- [ ] create routes
+- [ ]
+
 
 
 
