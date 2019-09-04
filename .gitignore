@@ -1,4 +1,6 @@
+**/.DS_Store
 .DS_Store
+venv/app.pyc
 .idea
 __pycache__/
 
