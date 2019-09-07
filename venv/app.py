@@ -11,6 +11,10 @@ def index():
     project = "Project Test"
     return render_template("index.html", project = project)
 
+@app.route ('/project', methods=['GET'])
+def projectTitle():
+
+
 if __name__ == "__main__":
 
 # run app
