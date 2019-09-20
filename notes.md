@@ -39,4 +39,9 @@ NOTE: must spin up two containers
 
 - to access dashboard, in browser enter *http://localhost:ip_address*
 
-- to get in via bash, run `docker exec -it ProjectPages bash`
+- to get in via bash, run `docker exec -it <db_name> bash`
+
+#### docker tips
+
+- for help, run `docker --help`
+- for list of containers run, `docker ps`
