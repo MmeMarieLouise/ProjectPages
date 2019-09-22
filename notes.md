@@ -115,7 +115,7 @@ VALUES ('value1','value2','value3');
 ```
 
 ###### connect database to application
-- install psycopg2, run `python3 -m pip install --user psycopg2-binary` inside the virtual environment
+- install psycopg2, run `python3 -m pip install --user psycopg2-binary` inside the virtual environment or when using pipenv `pipenv install psycopg2-binary`
 
 
 
