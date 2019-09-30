@@ -1,5 +1,11 @@
 # Notes
 
+
+#### check python 3 is installed
+- run, `python3`
+- to exit interactive interpreter run, `exit()`
+
+
 To run virtual environment
 `cd venv`
 `source venv/bin/activate`
@@ -115,8 +121,18 @@ VALUES ('value1','value2','value3');
 ```
 
 ###### connect database to application
-- install psycopg2, run `python3 -m pip install --user psycopg2-binary` inside the virtual environment or when using pipenv `pipenv install psycopg2-binary`
+- install psycopg2, run `python3 -m pip install --user psycopg2-binary` inside the virtual environment or `pip3 install psycopg2` or when using pipenv `pipenv install psycopg2-binary`
 
+- *NOTE:* `psycopg2` *=/=* `psycopg2-binary`, the packages contain the same code, but just have different names. Therefore, if I encounter an error I must debug with the following guidance from the exact package I installed.
+
+create a database cluster
+
+- enter the `psql` root, 
+1. first run `docker exec -it <db_name> bash`
+1. run, `su - postgres` to connect to postgres user
+1. run, `pwd` to double check location and you should see `/var/lib/postgresql`
+1. check postgres version, run `postgres -V` 
+1. to initialise database cluster run, `initdb -D /var/lib/pgsql/11.5/data`
 
 
 #### docker tips
@@ -127,3 +143,23 @@ VALUES ('value1','value2','value3');
 - to check logs run, `docker logs -f my_container_name`
 - to run container,  `docker start my_container_name`
 - to stop container, run `docker stop <container_id>`
+
+#### Multi container setup using Docker, Postgres, Conda, Flask and Jupyter Notebook
+
+- spin up docker container using postgres image - run, `docker run postgres`
+- run `docker ps` to check names
+- in a another terminal, log into the container and start `psql` process, `docker exec -it infallible_lehmann psql -U <database username> -d <database name>`. You should see something like `root@b6e4e4c52f20:/#`
+- or do then separately first run, `docker exec -it <postgres container name> bash` then `psql -U postgres` and the prompt will change
+- run `\l` to see the list of databases
+- run `\c <database_name>` to connect to the database
+- install Anaconda 
+- install Jupiter Notebook
+- install conda
+- in another terminal run conda virtual environment, `conda activate <environment-name>`
+- then run Jupiter Notebook in the conda env, run 
+- return to the terminal with the conda environment activated (it with have this `(base)`) and then run `jupyter notebook`
+- when it opens in the browser run `import psycopg2`
+- MUST create additional user and alter role as `SUPERUSER`  
+- to connect to database in Jupyter notebook, run `conn = psycopg2.connect(host="0.0.0.0", port=5432, database="projectpages", user="postgres", password="password")`
+
+[alter role to superuser - postgres](https://chartio.com/resources/tutorials/how-to-change-a-user-to-superuser-in-postgresql/)

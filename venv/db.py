@@ -1,28 +1,28 @@
+# import library
 import psycopg2
+
 # establish a connection to database
-connection = psycopg2.connect(
-                   host = "10.108.54.230",
-                   database= "projectpages",
-                   user = "postgres",
-                   password = "password",
-                   port = "5432",
+conn = psycopg2.connect(
+    database="projectpages",
+    user="postgres",
+    password="password",
+    host="0.0.0.0",
+    port="5432"
 )
 
+# cursor used to execute queries in the database
+cursor = conn.cursor()
 
-# cursor
-cursor = connection.cursor()
-
-
-# execute query
+# execute first query
 cursor.execute("select firstname, surname from contact")
-
 rows = cursor.fetchall()
 
 for r in rows:
-    print (f"firstname{r[0]} surname {r[1]}")
+    print(f"firstname{r[0]} surname {r[1]}")
 
-#close cursor
+# close cursor
 cursor.close()
 
 # close the connection
-connection.close()
+conn.close()
+
