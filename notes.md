@@ -96,7 +96,7 @@ You are now connected to database "<db_name>" as user "postgres".
 - to connect to your database run, `\c <db_name>`
 - to quit run, `\q`
 
-##### Create a table (SQL)
+##### SQL commands
 
 Enter each line and then press `enter`
 
@@ -119,6 +119,7 @@ INSERT INTO <table_name> (
 ( column3 )
 VALUES ('value1','value2','value3');
 ```
+- to query all the data in the db, run `SELECT * FROM <table_name>`
 
 ###### connect database to application
 - install psycopg2, run `python3 -m pip install --user psycopg2-binary` inside the virtual environment or `pip3 install psycopg2` or when using pipenv `pipenv install psycopg2-binary`
@@ -163,3 +164,5 @@ create a database cluster
 - to connect to database in Jupyter notebook, run `conn = psycopg2.connect(host="0.0.0.0", port=5432, database="projectpages", user="postgres", password="password")`
 
 [alter role to superuser - postgres](https://chartio.com/resources/tutorials/how-to-change-a-user-to-superuser-in-postgresql/)
+
+
