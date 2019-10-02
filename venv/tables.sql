@@ -2,7 +2,8 @@
 
 SELECT * FROM contact;
 
--- Create & populate contact table
+-- Create contact table
+
 CREATE TABLE contact(
 id integer,
 firstname character varying(50),
@@ -10,8 +11,7 @@ surname character varying(50),
 email character varying(50),
 telephone integer,
 slack character varying(20),
-linkedin character varying(50),
-);
+linkedin character varying(50));
 
 -- To add extra columns
 ALTER TABLE contact
@@ -258,10 +258,3 @@ INSERT INTO project(
 ( news,
 ( timeline)
 VALUES (0019, 'Site Migration', 'Koala Darlington', 'An initiative driven by the development teams of public_facing_site.ac.uk to migrate to a fully decoupled Drupal 8 and React JS website','We will use this project as a discovery period for the approach we are going to take long-term with the website. This quarter will aim to migrate the news section of wellcome.ac.uk to use a Drupal 8 backend and React frontend. ', 'Demo','Site Header', 'Development' );
-
-
-
-
-
-
-
