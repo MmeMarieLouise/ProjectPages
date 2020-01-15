@@ -12,11 +12,10 @@ working title: _‘Project Group Pages’_  template for the organisation’s in
 The Trustnet team devised a way to implement it while still accommodating our original aims. 
 The final result is a new _‘Project Group Pages’_ template. 
 
-We are involved in UX discovery and I have been invited to work alongside the Trustnet developers once 
+We were involved in UX discovery and I was invited to work alongside the Trustnet developers once 
 development begins. However, I’ve started developing a working prototype of this feature, 
 an API in Python, for my portfolio. I’m using Venv virtual environment as a lightweight alternative to 
 Pipenv and I’ll be using Flask to build the server. This project is being supervised by my mentor, James. 
-I expect to have an MVP by late-August. 
 
 
 

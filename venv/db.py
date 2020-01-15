@@ -1,3 +1,4 @@
+from flask import render_template
 # import library
 import psycopg2
 
@@ -16,6 +17,8 @@ cursor = conn.cursor()
 # execute first query
 cursor.execute("select firstname, surname from contact")
 rows = cursor.fetchall()
+#render_template('template.html')
+
 
 for r in rows:
     print(f"firstname{r[0]} surname {r[1]}")
